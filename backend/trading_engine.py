@@ -58,8 +58,13 @@ class TradingEngine:
             return {"success": False, "error": str(e)}
     
     def _get_dynamic_lot(self) -> float:
-        """Calculate dynamic lot size based on account growth"""
+        """Calculate dynamic lot size based on account growth.
+        Formula: lot = base_lot * (1.3 ^ times_doubled)
+        Where times_doubled = floor(log2(current_balance / initial_balance))
+        This gives +30% lot increase for every time balance doubles.
+        """
         try:
+            import math
             from profit_tracker import get_profit_tracker
             tracker = get_profit_tracker()
             
@@ -73,9 +78,15 @@ class TradingEngine:
             account = self.mt5_client.get_account_info()
             current_balance = account.get('balance', initial_balance)
             
-            # Calculate growth multiplier (floor to avoid fractional lots)
-            growth_multiplier = int(current_balance / initial_balance)
-            growth_multiplier = max(1, growth_multiplier)  # At least 1x
+            # Calculate how many times balance has doubled
+            if current_balance >= initial_balance:
+                ratio = current_balance / initial_balance
+                times_doubled = int(math.log2(ratio)) if ratio >= 1 else 0
+            else:
+                times_doubled = 0
+            
+            # Apply +30% per double (1.3^times_doubled)
+            growth_multiplier = 1.3 ** times_doubled
             
             # Calculate new lot
             dynamic_lot = base_lot * growth_multiplier
@@ -83,8 +94,8 @@ class TradingEngine:
             # Round to 2 decimals (standard lot precision)
             dynamic_lot = round(dynamic_lot, 2)
             
-            if growth_multiplier > 1:
-                logger.info(f"Dynamic lot: {base_lot} x {growth_multiplier} = {dynamic_lot} (Balance: ${current_balance:.2f})")
+            if times_doubled > 0:
+                logger.info(f"Dynamic lot: {base_lot} x 1.3^{times_doubled} = {dynamic_lot} (Balance: ${current_balance:.2f})")
             
             return dynamic_lot
             
