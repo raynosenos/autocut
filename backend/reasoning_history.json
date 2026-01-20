@@ -1,341 +1,5 @@
 [
   {
-    "timestamp": "2026-01-20T11:13:57.305212",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448065236,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:14:04.919584",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448067303,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:19:09.976498",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448034745,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat searah posisi, profit masih negatif dan belum mencapai target Auto-BEP"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:19:17.503339",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448065236,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:19:25.086255",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448067303,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:24:28.554430",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448034745,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat searah posisi, profit masih negatif dan belum mencapai target Auto-BEP"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:24:32.066011",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448065236,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "MODIFY_SL",
-      "new_sl": 4670.28,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Profit sudah mencapai 21.5 pips, memenuhi syarat Auto-BEP, namun candle terakhir tidak menunjukkan momentum kuat untuk ADD_DCA"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:24:39.530243",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448067303,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:29:47.224503",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448034745,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:29:54.781811",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448065236,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:30:02.434807",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448067303,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:35:05.961823",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448034745,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Profit belum mencapai 20 pips, tidak ada momentum kuat untuk ADD_DCA, dan tidak ada reversal pattern yang jelas untuk CLOSE"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:35:13.495776",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448065236,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:35:21.071948",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448067303,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:40:32.069194",
-    "symbol": "XAUUSD.m",
-    "type": "ENTRY",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:41:09.607885",
-    "symbol": "XAUUSD.m",
-    "type": "ENTRY",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:41:47.206522",
-    "symbol": "XAUUSD.m",
-    "type": "ENTRY",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:42:20.512159",
-    "symbol": "XAUUSD.m",
-    "type": "ENTRY",
-    "provider": "groq",
-    "result": {
-      "decision": "BUY",
-      "entry_price": 4676.78,
-      "SL": 4668.78,
-      "TP": 4681.78,
-      "sl_pips": 80,
-      "tp_pips": 50,
-      "rr_ratio": 0.625,
-      "confidence": 70,
-      "reason": "Candle terakhir hijau/bullish"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:42:54.816288",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448172524,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat untuk ADD_DCA, dan posisi belum mencapai target atau reversal pattern yang jelas, maka HOLD posisi."
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:47:58.246037",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448172524,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat untuk ADD_DCA, dan posisi belum mencapai target Auto-BEP"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:53:07.553822",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448172524,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:53:15.223158",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448190167,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:58:19.676754",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448172524,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat untuk ADD_DCA, namun profit sudah mencapai 30.6 pips. Tunggu sampai Auto-BEP trigger atau reversal pattern yang jelas."
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:58:22.981113",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448190167,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat searah posisi, posisi masih dalam kerugian dan belum mencapai target Auto-BEP"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T11:58:30.551019",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448195245,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T12:06:06.484078",
-    "symbol": "XAUUSD.m",
-    "type": "ENTRY",
-    "provider": "groq",
-    "result": {
-      "decision": "BUY",
-      "entry_price": 4682.35,
-      "SL": 4674.35,
-      "TP": 4687.35,
-      "sl_pips": 80,
-      "tp_pips": 50,
-      "rr_ratio": 0.625,
-      "confidence": 80,
-      "reason": "Candle terakhir bullish"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T12:06:45.009701",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448222421,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T12:11:51.809421",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448222421,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat untuk melakukan ADD_DCA, dan posisi belum mencapai target atau reversal pattern yang jelas, maka posisi dihold"
-    }
-  },
-  {
     "timestamp": "2026-01-20T12:11:59.304685",
     "symbol": "XAUUSD.m",
     "ticket": 1448231149,
@@ -1210,6 +874,305 @@
     "provider": "groq",
     "result": {
       "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:06:50.921153",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:07:28.458741",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:08:04.416195",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "decision": "BUY",
+      "entry_price": 4714.05,
+      "SL": 4706.05,
+      "TP": 4719.05,
+      "sl_pips": 80,
+      "tp_pips": 50,
+      "rr_ratio": 0.625,
+      "confidence": 70,
+      "reason": "Candle terakhir hijau/bullish"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:08:42.867606",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448802491,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:13:52.433013",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448802491,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:13:59.946154",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448813640,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:19:03.478487",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448802491,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "action": "MODIFY_SL",
+      "new_sl": 4714.13,
+      "new_tp": null,
+      "dca_reason": null,
+      "momentum_strength": null,
+      "reason": "Profit sudah mencapai 20.6 pips, memenuhi syarat Auto-BEP, namun candle terakhir tidak menunjukkan momentum kuat untuk ADD_DCA"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:19:06.744371",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448813640,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "action": "HOLD",
+      "new_sl": null,
+      "new_tp": null,
+      "dca_reason": null,
+      "momentum_strength": null,
+      "reason": "Tidak ada momentum kuat searah posisi, profit masih negatif dan belum mencapai target Auto-BEP"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:24:10.239802",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448802491,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "action": "HOLD",
+      "new_sl": 4714.13,
+      "new_tp": 4719.05,
+      "dca_reason": null,
+      "momentum_strength": null,
+      "reason": "Tidak ada momentum kuat untuk ADD_DCA, namun profit sudah mencapai 27.9 pips. Tunggu sampai Auto-BEP trigger atau reversal pattern yang jelas."
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:24:17.829961",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448813640,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:25:28.897638",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:26:06.713471",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:26:44.408536",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:27:21.988932",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:27:59.676766",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:28:37.251316",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:29:14.742226",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:29:52.415448",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:30:30.070789",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:31:07.620824",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:31:45.204565",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:32:22.873963",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:33:00.407582",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "error": "Max retries exceeded due to rate limiting"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:33:36.501183",
+    "symbol": "XAUUSD.m",
+    "type": "ENTRY",
+    "provider": "groq",
+    "result": {
+      "decision": "BUY",
+      "entry_price": 4719.99,
+      "SL": 4711.99,
+      "TP": 4724.99,
+      "sl_pips": 80,
+      "tp_pips": 50,
+      "rr_ratio": 0.625,
+      "confidence": 80,
+      "reason": "Candle terakhir hijau/bullish"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:34:13.405362",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "action": "HOLD",
+      "new_sl": null,
+      "new_tp": null,
+      "dca_reason": null,
+      "momentum_strength": null,
+      "reason": "Tidak ada momentum kuat untuk melakukan ADD_DCA, dan posisi belum mencapai target atau reversal pattern yang jelas, maka posisi dihold"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:39:19.106842",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:44:20.551615",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:49:21.203944",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
     }
   }
 ]
