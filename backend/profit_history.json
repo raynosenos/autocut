@@ -1,0 +1,26 @@
+{
+  "initial_balance": 100,
+  "history": [
+    {
+      "date": "2026-01-19",
+      "balance": 156.88,
+      "equity": 156.88,
+      "profit_day": 56.879999999999995,
+      "trades_count": 0,
+      "created_at": "2026-01-19T11:35:07.663379",
+      "updated_at": "2026-01-19T23:59:46.801569"
+    },
+    {
+      "date": "2026-01-20",
+      "balance": 770.14,
+      "equity": 730.66,
+      "profit_day": 613.26,
+      "trades_count": 0,
+      "created_at": "2026-01-20T00:00:21.120249",
+      "updated_at": "2026-01-20T14:20:41.794456"
+    }
+  ],
+  "total_wins": 65,
+  "total_losses": 23,
+  "total_trades": 88
+}
