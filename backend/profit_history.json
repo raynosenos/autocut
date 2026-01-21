@@ -13,14 +13,14 @@
     {
       "date": "2026-01-20",
       "balance": 266.14,
-      "equity": 264.58,
+      "equity": 242.22,
       "profit_day": 109.25999999999999,
       "trades_count": 0,
       "created_at": "2026-01-20T00:00:21.120249",
-      "updated_at": "2026-01-20T15:50:46.497436"
+      "updated_at": "2026-01-20T16:00:46.801305"
     }
   ],
-  "total_wins": 78,
+  "total_wins": 80,
   "total_losses": 23,
-  "total_trades": 101
+  "total_trades": 103
 }

@@ -169,55 +169,65 @@ class AIBrain:
         current_bid = current_price.get('bid', 0)
         current_ask = current_price.get('ask', 0)
         
-        system_prompt = f"""Anda adalah trader agresif XAUUSD. SELALU ENTRY setiap analisa, jangan terlalu sering WAIT.
+        system_prompt = f"""Anda adalah trader XAUUSD yang MENGIKUTI TREND.
 
-ATURAN ENTRY (AKTIF):
-1. SELALU pilih BUY atau SELL, hindari WAIT kecuali benar-benar tidak ada signal
-2. Jika candle terakhir bullish -> BUY
-3. Jika candle terakhir bearish -> SELL
-4. Jika harga di HIGH (resistance) -> SELL
-5. Jika harga di LOW (support) -> BUY
+ATURAN WAJIB - IKUTI H1 TREND:
+1. Hitung jumlah candle bullish vs bearish di H1 (6 candle terakhir)
+2. Jika 4+ candle H1 BULLISH (hijau) → HANYA BOLEH BUY, DILARANG SELL
+3. Jika 4+ candle H1 BEARISH (merah) → HANYA BOLEH SELL, DILARANG BUY
+4. Jika mixed (3-3 atau 4-2) → boleh BUY atau SELL sesuai M15
 
-ANTI BIAS - SANGAT PENTING:
-- JANGAN selalu BUY! Lihat market structure
-- Jika 2+ candle turun berturut -> kemungkinan besar SELL, BUKAN BUY
-- Jika 2+ candle naik berturut -> kemungkinan besar BUY, BUKAN SELL
-- Ikuti ARAH candle terakhir, jangan melawan
+DILARANG KERAS:
+- JANGAN SELL saat H1 trend STRONG BUY (new ATH, 4+ green candles)
+- JANGAN BUY saat H1 trend STRONG SELL (breakdown, 4+ red candles)
+- Counter-trend = kena SL, HINDARI!
 
-SL/TP:
-- SL: 80 pips = 8 point
+KAPAN BOLEH ENTRY:
+- BUY: H1 bullish dominant + M15 pullback selesai (candle hijau muncul)
+- SELL: H1 bearish dominant + M15 bounce selesai (candle merah muncul)
+- WAIT: jika H1 dan M15 berlawanan arah (konflik signal)
+
+SL/TP FIXED:
+- SL: 60 pips = 6 point (MAXIMUM, tidak boleh lebih!)
 - TP: 50 pips = 5 point
 
-BUY di {current_ask:.2f}: SL={current_ask - 8:.2f}, TP={current_ask + 5:.2f}
-SELL di {current_bid:.2f}: SL={current_bid + 8:.2f}, TP={current_bid - 5:.2f}
+BUY di {current_ask:.2f}: SL={current_ask - 6:.2f}, TP={current_ask + 5:.2f}
+SELL di {current_bid:.2f}: SL={current_bid + 6:.2f}, TP={current_bid - 5:.2f}
 
 OUTPUT (JSON):
 {{
     "decision": "BUY" | "SELL" | "WAIT",
+    "h1_trend": "BULLISH" | "BEARISH" | "MIXED",
+    "h1_bullish_count": int,
+    "h1_bearish_count": int,
     "entry_price": float,
     "SL": float,
     "TP": float,
-    "sl_pips": 80,
+    "sl_pips": 60,
     "tp_pips": 50,
     "rr_ratio": float,
     "confidence": 0-100,
-    "reason": "alasan"
+    "reason": "alasan termasuk H1 trend analysis"
 }}"""
 
-        user_prompt = f"""ANALISA {symbol} - HARUS ENTRY!
+        user_prompt = f"""ANALISA {symbol}
 
 HARGA: Bid={current_bid:.2f}, Ask={current_ask:.2f}
 
-H1 CANDLES:
+H1 CANDLES (PENTING - tentukan trend dominan):
 {h1_summary}
 
-M15 CANDLES:
+Hitung: berapa candle H1 BULLISH (green) vs BEARISH (red)?
+- Jika 4+ bullish → H1 trend BULLISH → HANYA BUY
+- Jika 4+ bearish → H1 trend BEARISH → HANYA SELL
+
+M15 CANDLES (timing entry):
 {m15_summary}
 
-PILIH SATU - BUY atau SELL:
-- Jika candle terakhir HIJAU/bullish -> BUY
-- Jika candle terakhir MERAH/bearish -> SELL
-- Jangan WAIT kecuali signal sangat conflicting"""
+KEPUTUSAN:
+- Jika H1 strong trend → IKUTI, jangan lawan
+- Jika H1 mixed → lihat M15 untuk confirmation
+- WAIT jika signal konflik"""
 
         return [
             {"role": "system", "content": system_prompt},

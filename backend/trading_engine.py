@@ -285,6 +285,21 @@ class TradingEngine:
                     # Use dynamic lot sizing based on account growth
                     dynamic_lot = self._get_dynamic_lot()
                     
+                    # Validate and enforce max SL of 60 pips (6 points)
+                    current_price_val = self.mt5_client.get_price(symbol)
+                    if decision == "BUY":
+                        entry_price = current_price_val.get('ask', 0)
+                        max_sl = entry_price - 6  # 60 pips = 6 points
+                        if sl is None or sl < max_sl:
+                            sl = max_sl
+                            logger.info(f"SL adjusted to max 60 pips: {sl}")
+                    else:  # SELL
+                        entry_price = current_price_val.get('bid', 0)
+                        max_sl = entry_price + 6  # 60 pips = 6 points
+                        if sl is None or sl > max_sl:
+                            sl = max_sl
+                            logger.info(f"SL adjusted to max 60 pips: {sl}")
+                    
                     order_result = self.mt5_client.place_order(
                         symbol=symbol,
                         order_type=decision,

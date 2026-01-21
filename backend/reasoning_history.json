@@ -1,55 +1,5 @@
 [
   {
-    "timestamp": "2026-01-20T12:11:59.304685",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448231149,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T12:17:05.342931",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448222421,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Tidak ada momentum kuat searah posisi, profit masih negatif, dan belum mencapai target Auto-BEP"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T12:17:12.850323",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448231149,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "error": "Max retries exceeded due to rate limiting"
-    }
-  },
-  {
-    "timestamp": "2026-01-20T12:22:19.832236",
-    "symbol": "XAUUSD.m",
-    "ticket": 1448222421,
-    "type": "GUARDIAN",
-    "provider": "groq",
-    "result": {
-      "action": "HOLD",
-      "new_sl": null,
-      "new_tp": null,
-      "dca_reason": null,
-      "momentum_strength": null,
-      "reason": "Profit belum mencapai 20 pips, tidak ada momentum kuat untuk ADD_DCA, dan tidak ada reversal pattern yang jelas untuk CLOSE"
-    }
-  },
-  {
     "timestamp": "2026-01-20T12:22:27.401437",
     "symbol": "XAUUSD.m",
     "ticket": 1448231149,
@@ -1169,6 +1119,46 @@
     "timestamp": "2026-01-20T15:49:21.203944",
     "symbol": "XAUUSD.m",
     "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:54:21.809304",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:59:25.924535",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448883163,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:59:26.507885",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448937363,
+    "type": "GUARDIAN",
+    "provider": "groq",
+    "result": {
+      "error": "API error: 401"
+    }
+  },
+  {
+    "timestamp": "2026-01-20T15:59:27.034117",
+    "symbol": "XAUUSD.m",
+    "ticket": 1448948539,
     "type": "GUARDIAN",
     "provider": "groq",
     "result": {
